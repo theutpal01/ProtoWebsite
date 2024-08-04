@@ -1,8 +1,9 @@
 import { CgDetailsMore } from "react-icons/cg";
 
+
 function Header({ theme, toggleTheme, scrollTo }) {
 	return (
-		<div className="navbar bg-base-100 z-10 rounded-b-md shadow-md fixed">
+		<div className="navbar bg-base-100 z-50 rounded-b-md shadow-md fixed">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

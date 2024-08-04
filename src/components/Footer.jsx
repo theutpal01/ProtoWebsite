@@ -1,8 +1,49 @@
 import React from "react";
+import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
+
 
 function Footer() {
+	const mapStyles = {
+		width: "100%",
+		height: "200px",
+	};
+
+	const defaultCenter = {
+		lat: 28.4595, // Replace with your latitude
+		lng: 77.0266, // Replace with your longitude
+	};
+
 	return (
-		<footer className="footer glass bg-base-300 p-10 pb-24 sm:pb-10">
+		<footer className="footer relative glass bg-base-300 p-10 pb-24 sm:pb-10 pt-32 mt-16">
+			<div className="absolute card card-side bg-base-100 shadow-xl w-11/12 md:w-5/6 lg:w-1/2 items-center flex mx-auto mb-6 overflow-hidden left-1/2 -translate-x-1/2 -translate-y-1/2">
+				<div className="w-1/2 md:w-1/3">
+					<LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAP_API}>
+						<GoogleMap
+							mapContainerStyle={mapStyles}
+							zoom={13}
+							center={defaultCenter}
+						>
+							<MarkerF
+								position={defaultCenter}
+								icon="http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+							/>
+						</GoogleMap>
+					</LoadScript>
+				</div>
+				<div className="card-body align-text-bottom">
+					<h3 className="card-title">Address</h3>
+					<p>
+						Global Change Initiative 21 Greenfield Lane,
+						<br />
+						Sector 42 Gurugram, Haryana 122003 India
+					</p>
+					<p>
+						Contact Number: +91 98765 43210
+						<br />
+						Email Address: info@globalchangeinitiative.org
+					</p>
+				</div>
+			</div>
 			<aside>
 				<a href="#">
 					<svg

@@ -1,16 +1,33 @@
-import { MdHome, MdCalendarToday, MdNewspaper } from "react-icons/md"
+import { useState } from "react";
+import { MdHome, MdCalendarMonth, MdNewspaper } from "react-icons/md";
 
-export default function Navigation({scrollTo}) {
+export default function Navigation({ scrollTo }) {
+	const [activeSection, setActiveSection] = useState("hero");
+
+	const handleClick = (id) => {
+		scrollTo(id);
+		setActiveSection(id);
+	}
+
 	return (
 		<div className="btm-nav z-10 sm:hidden flex">
-			<button className="rounded-tl-md" onClick={() => scrollTo("events")}>
-				<MdCalendarToday className="text-xl hover:text-2xl duration-200" />
+			<button
+				className={`${activeSection === "events" ? "active" : "text-slate-500"}`}
+				onClick={() => handleClick("events")}
+			>
+				<MdCalendarMonth className="text-xl duration-200" />
 			</button>
-			<button className="active" onClick={() => scrollTo("hero")}>
-				<MdHome className="text-2xl hover:text-3xl duration-200"/>			
+			<button
+				className={`${activeSection === "hero" ? "active" : "text-slate-500"}`}
+				onClick={() => handleClick("hero")}
+			>
+				<MdHome className="text-3xl duration-200" />
 			</button>
-			<button className="rounded-tr-md" onClick={() => scrollTo("news")}>
-				<MdNewspaper className="text-xl hover:text-2xl duration-200" />
+			<button
+				className={`${activeSection === "news" ? "active" : "text-slate-500"}`}
+				onClick={() => handleClick("news")}
+			>
+				<MdNewspaper className="text-xl duration-200" />
 			</button>
 		</div>
 	);

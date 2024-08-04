@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Stats from "../Stats";
 
 function Hero() {
 	return (
@@ -6,7 +7,9 @@ function Hero() {
 			<div className="hero-overlay bg-opacity-70"></div>
 			<div className="hero-content text-neutral-content w-full md:justify-start md:pl-10">
 				<div className="max-w-md">
-					<h1 className="mb-5 text-4xl font-bold animate-pulse">Empower Change.</h1>
+					<h1 className="mb-5 text-4xl font-bold animate-pulse">
+						Empower Change.
+					</h1>
 					<p className="mb-5">
 						Transform lives. Build futures. Join us in driving education,
 						healthcare, and sustainable development for a better world.
@@ -16,6 +19,9 @@ function Hero() {
 						Join Us
 					</button>
 				</div>
+			</div>
+			<div className="absolute z-2 bottom-0 -translate-y-1/2">
+				<Stats />
 			</div>
 		</div>
 	);

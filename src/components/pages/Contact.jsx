@@ -2,7 +2,10 @@ import React from "react";
 
 function Contact() {
 	return (
-		<div className="h-screen w-full flex flex-col gap-6 justify-center items-center" id="contact">
+		<div
+			className="h-screen w-full flex flex-col gap-4 justify-center items-center"
+			id="contact"
+		>
 			<div className="container h-4/5 md:bg-base-200 rounded-md md:shadow-md p-4 md:glass">
 				<h1 className="text-4xl text-center my-4">Contact Us</h1>
 				<div className="flex flex-col lg:flex-row justify-around py-5 items-center">

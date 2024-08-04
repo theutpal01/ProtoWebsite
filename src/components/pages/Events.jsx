@@ -7,6 +7,7 @@ const events = [
 		title: "Annual Charity Gala",
 		date: "November 15, 2024",
 		time: "6:00 PM - 10:00 PM",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		location: "Grand Hotel Ballroom, Maple City",
 		description:
 			"Join us for an evening of dining, entertainment, and philanthropy as we raise funds for our education initiatives. The event will feature a silent auction, live music, and keynote speeches from leading figures in the nonprofit sector.",
@@ -18,6 +19,7 @@ const events = [
 	{
 		id: 2,
 		title: "Community Clean-Up Day",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		date: "September 21, 2024",
 		time: "9:00 AM - 12:00 PM",
 		location: "Central Park, Maple City",
@@ -31,6 +33,7 @@ const events = [
 	{
 		id: 3,
 		title: "Annual Fundraising Run",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		date: "March 10, 2025",
 		time: "8:00 AM - 12:00 PM",
 		location: "City Sports Complex, Maple City",
@@ -44,6 +47,7 @@ const events = [
 	{
 		id: 4,
 		title: "Charity Art Auction",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		date: "February 20, 2025",
 		time: "5:00 PM - 9:00 PM",
 		location: "Art Gallery, Downtown",
@@ -57,6 +61,7 @@ const events = [
 	{
 		id: 5,
 		title: "Youth Leadership Workshop",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		date: "July 15, 2024",
 		time: "10:00 AM - 4:00 PM",
 		location: "Youth Center, Maple City",
@@ -72,6 +77,7 @@ const events = [
 		title: "Global Change Initiative Conference",
 		date: "December 5-7, 2024",
 		time: "9:00 AM - 6:00 PM each day",
+		image: "https://assets.skyfilabs.com/images/blog/ngo-activity-portal-project.webp",
 		location: "Convention Center, Maple City",
 		description:
 			"Join us for our annual conference where we discuss the latest trends, challenges, and solutions in the nonprofit sector. The conference will feature panel discussions, networking opportunities, and workshops.",

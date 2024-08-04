@@ -1,6 +1,5 @@
 import { CgDetailsMore } from "react-icons/cg";
 
-
 function Header({ theme, toggleTheme, scrollTo }) {
 	return (
 		<div className="navbar bg-base-100 z-50 rounded-b-md shadow-md fixed">

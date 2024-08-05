@@ -2,10 +2,10 @@ import React from "react";
 import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
 
 
-function Footer() {
+function Footer({scrollTo}) {
 	const mapStyles = {
 		width: "100%",
-		height: "200px",
+		height: "230px",
 	};
 
 	const defaultCenter = {
@@ -14,9 +14,9 @@ function Footer() {
 	};
 
 	return (
-		<footer className="footer relative glass bg-base-300 p-10 pb-24 sm:pb-10 pt-32 mt-16">
-			<div className="absolute card card-side bg-base-100 shadow-xl w-11/12 md:w-5/6 lg:w-1/2 items-center flex mx-auto mb-6 overflow-hidden left-1/2 -translate-x-1/2 -translate-y-1/2">
-				<div className="w-1/2 md:w-1/3">
+		<footer className="footer relative glass bg-base-300 p-10 pb-24 sm:pb-10 pt-36 mt-16">
+			<div className="absolute card card-side bg-base-100 shadow-xl w-11/12 md:w-5/6 lg:w-1/2 items-center flex mx-auto mb-6 overflow-hidden left-1/2 -translate-x-1/2 -translate-y-3/4 sm:-translate-y-1/2 flex-col sm:flex-row">
+				<div className="w-full sm:w-1/3">
 					<LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAP_API}>
 						<GoogleMap
 							mapContainerStyle={mapStyles}
@@ -31,7 +31,7 @@ function Footer() {
 					</LoadScript>
 				</div>
 				<div className="card-body align-text-bottom">
-					<h3 className="card-title">Address</h3>
+					<h3 className="card-title">Reach us</h3>
 					<p>
 						Global Change Initiative 21 Greenfield Lane,
 						<br />
@@ -66,17 +66,17 @@ function Footer() {
 			</aside>
 			<nav>
 				<h6 className="footer-title">Services</h6>
-				<a className="link link-hover">Events</a>
-				<a className="link link-hover">Projects</a>
+				<a className="link link-hover" onClick={() => scrollTo("events")}>Events</a>
+				<a className="link link-hover"onClick={() => scrollTo("projects")}>Projects</a>
 				<a className="link link-hover">Marketing</a>
 				<a className="link link-hover">Donate Now</a>
 			</nav>
 			<nav>
 				<h6 className="footer-title">Company</h6>
-				<a className="link link-hover">About us</a>
-				<a className="link link-hover">Contact</a>
-				<a className="link link-hover">News/Blogs</a>
-				<a className="link link-hover">Get Involved</a>
+				<a className="link link-hover" onClick={() => scrollTo("about")}>About us</a>
+				<a className="link link-hover" onClick={() => scrollTo("contact")}>Contact</a>
+				<a className="link link-hover" onClick={() => scrollTo("news")}>News/Blogs</a>
+				<a className="link link-hover" onClick={() => scrollTo("hero")}>Get Involved</a>
 			</nav>
 			<nav>
 				<h6 className="footer-title">Legal</h6>

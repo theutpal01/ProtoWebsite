@@ -105,7 +105,7 @@ function About() {
 							id="slide3"
 							className="carousel-item relative w-full justify-center"
 						>
-							<div className="w-5/6 self-center box-content">
+							<div className="w-5/6 self-center box-content flex flex-col">
 								<h2 className="text-4xl text-center m-3">Our Vision</h2>
 								<div className="flex lg:flex-row-reverse flex-col items-center align-middle justify-between">
 									<img

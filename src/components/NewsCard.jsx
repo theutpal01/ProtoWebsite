@@ -3,7 +3,7 @@ import { MdAlarm } from "react-icons/md";
 
 function NewsCard({ blogObj }) {
 	return (
-		<div className="bg-base-200 collapse">
+		<div className="bg-base-200 collapse shadow-md">
 			<input type="checkbox" className="peer" />
 			<div className="collapse-title glass">
 				<h2 className="card-title">

@@ -2,7 +2,7 @@ import React from "react";
 import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
 
 
-function Footer({scrollTo}) {
+function Footer({scrollTo, donate }) {
 	const mapStyles = {
 		width: "100%",
 		height: "230px",
@@ -69,7 +69,7 @@ function Footer({scrollTo}) {
 				<a className="link link-hover" onClick={() => scrollTo("events")}>Events</a>
 				<a className="link link-hover"onClick={() => scrollTo("projects")}>Projects</a>
 				<a className="link link-hover">Marketing</a>
-				<a className="link link-hover">Donate Now</a>
+				<a className="link link-hover" onClick={donate}>Donate Now</a>
 			</nav>
 			<nav>
 				<h6 className="footer-title">Company</h6>

@@ -13,7 +13,7 @@ function Event({ eventObj }) {
 				<p>{eventObj?.description}</p>
 				<p>Location: {eventObj?.location}</p>
 				<div className="card-actions items-end flex-col">
-					<div className="badge badge-outline">
+					<div className="badge badge-outline my-3">
 						<MdAlarm className="mr-2"/>
 						{eventObj?.time}
 					</div>

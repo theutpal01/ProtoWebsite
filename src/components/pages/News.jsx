@@ -29,9 +29,9 @@ const blogPosts = [
 		author: "John Doe",
 		publishedDate: "January 10, 2024",
 		excerpt:
-			"2023 was a year of tremendous growth and impact for [NGO Name]. From expanding our healthcare initiatives to launching new educational programs, our efforts reached more people than ever before. Discover the key highlights and statistics from the past year in our annual report.",
+			"2023 was a year of tremendous growth and impact for Global Change Initiative. From expanding our healthcare initiatives to launching new educational programs, our efforts reached more people than ever before. Discover the key highlights and statistics from the past year in our annual report.",
 		fullStory:
-			"In 2023, [NGO Name] reached new milestones in our mission to support underserved communities. We expanded our healthcare initiatives, reaching over 20,000 individuals with essential medical services, and launched 15 new educational programs across rural areas. Our work was recognized globally, and we established partnerships with several leading organizations to amplify our impact. The annual report provides a detailed overview of our achievements, challenges, and future goals.",
+			"In 2023, Global Change Initiative reached new milestones in our mission to support underserved communities. We expanded our healthcare initiatives, reaching over 20,000 individuals with essential medical services, and launched 15 new educational programs across rural areas. Our work was recognized globally, and we established partnerships with several leading organizations to amplify our impact. The annual report provides a detailed overview of our achievements, challenges, and future goals.",
 		keyHighlights: [
 			"20,000 individuals received healthcare services.",
 			"15 new educational programs launched.",
@@ -50,7 +50,7 @@ const blogPosts = [
 		excerpt:
 			"We have an exciting lineup of events planned for this fall! Whether you're looking to volunteer, donate, or simply learn more about our work, there's something for everyone. Find out how you can be part of our upcoming activities and help us make a difference.",
 		fullStory:
-			"As the fall season approaches, [NGO Name] is gearing up for a series of events that are sure to inspire and engage our community. From our Annual Charity Gala to Community Clean-Up Day, there are numerous opportunities to get involved and support our mission. These events are not only a chance to contribute to important causes but also a way to connect with like-minded individuals and make lasting memories.",
+			"As the fall season approaches, Global Change Initiative is gearing up for a series of events that are sure to inspire and engage our community. From our Annual Charity Gala to Community Clean-Up Day, there are numerous opportunities to get involved and support our mission. These events are not only a chance to contribute to important causes but also a way to connect with like-minded individuals and make lasting memories.",
 		upcomingEvents: [
 			{
 				eventName: "Annual Charity Gala",

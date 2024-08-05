@@ -1,8 +1,10 @@
 import React from "react";
+import ProjectDetails from "./ProjectDetails";
 
-function Project({ projectObj }) {
+function Project({ id, projectObj, projectDialog }) {
 	return (
 		<div className="card z-0 bg-base-100 image-full w-full shadow-xl">
+			<ProjectDetails id={id} projectObj={projectObj} />
 			<figure>
 				<img src={projectObj?.image} alt={projectObj?.title} />
 			</figure>
@@ -19,7 +21,7 @@ function Project({ projectObj }) {
 				</h2>
 				<p>{projectObj?.description}</p>
 				<div className="card-actions justify-end">
-					<button className="btn btn-primary">Read more</button>
+					<button className="btn btn-primary" onClick={() => projectDialog(id)}>Read more</button>
 				</div>
 			</div>
 		</div>

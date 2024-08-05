@@ -17,7 +17,7 @@ function Event({ eventObj }) {
 						<MdAlarm className="mr-2"/>
 						{eventObj?.time}
 					</div>
-					<button type="button" className="btn btn-primary">Register Now</button>
+					<button type="button" className="btn btn-primary w-full">Register Now</button>
 				</div>
 			</div>
 		</div>

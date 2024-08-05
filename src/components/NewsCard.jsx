@@ -6,11 +6,11 @@ function NewsCard({ blogObj }) {
 		<div className="bg-base-200 collapse shadow-md">
 			<input type="checkbox" className="peer" />
 			<div className="collapse-title glass">
-				<h2 className="card-title">
-					{blogObj?.title}{" "}
+				<h2 className="card-title flex flex-col md:flex-row items-start justify-between">
+					{blogObj?.title}
 					<div className="badge badge-accent">by- {blogObj?.author} </div>
 				</h2>
-				<p className="mt-4">{blogObj?.excerpt}</p>
+				<p className="mt-4 text-justify">{blogObj?.excerpt}</p>
 				<div className="card-actions justify-between mt-6 items-end w-full">
 					<p className="text-sm">Click for more...</p>
 					<div className="badge badge-outline flex">

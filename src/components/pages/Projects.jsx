@@ -128,6 +128,11 @@ const projects = [
 ];
 
 function Projects() {
+	const openProjectDialog = (id) => {
+		document.getElementById(id).showModal()
+	};
+
+
 	return (
 		<div
 			className="w-full flex flex-col justify-center items-center p-12 mt-6"
@@ -136,7 +141,7 @@ function Projects() {
 			<h2 className="text-4xl my-6 items-center">Our Projects</h2>
 			<div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mx-auto">
 				{projects.map((projectObj, key) => (
-					<Project key={key} projectObj={projectObj} />
+					<Project key={key} id={key} projectObj={projectObj} projectDialog={openProjectDialog} />
 				))}
 			</div>
 		</div>

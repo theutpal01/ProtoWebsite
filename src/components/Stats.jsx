@@ -15,7 +15,7 @@ function Stats() {
 				<div className="stat-desc">in sustainable practices.</div>
 			</div>
 
-			<div className="stat place-items-center hidden sm:block">
+			<div className="stat place-items-center">
 				<div className="stat-title">Distributed over</div>
 				<div className="stat-value text-secondary">1M</div>
 				<div className="stat-desc">educational resources</div>

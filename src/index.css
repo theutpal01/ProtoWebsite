@@ -10,7 +10,7 @@
 
 
 /* Background image for large screens and up (e.g., desktops) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape) {
 	.hero-lg {
 		background-image: url("https://cdn.prod.website-files.com/65704935a8e57f2063618550/65b88c9dbd3141bbf96fef2c_home-hero-5.webp");
 	}

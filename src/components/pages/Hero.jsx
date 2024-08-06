@@ -23,7 +23,7 @@ function Hero({ scrollTo, openForm }) {
 					</button>
 				</div>
 			</div>
-			<div className="flex self-end mb-24 text-center shadow-lg opacity-70">
+			<div className="self-end mb-24 text-center hidden lg:flex shadow-lg opacity-70">
 				<Stats />
 			</div>
 		</div>

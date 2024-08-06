@@ -23,12 +23,12 @@ function Volunteer() {
 						<label className="join">
 							<input
 								type="text"
-								className="grow join-item input input-bordered"
+								className="grow join-item input input-bordered w-1/2"
 								placeholder="First Name"
 							/>
 							<input
 								type="text"
-								className="grow join-item input input-bordered"
+								className="grow join-item input input-bordered w-1/2"
 								placeholder="Last Name"
 							/>
 						</label>

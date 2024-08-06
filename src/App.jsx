@@ -9,6 +9,7 @@ import Projects from "./components/pages/Projects";
 import Events from "./components/pages/Events";
 import News from "./components/pages/News";
 import Donate from "./components/Donate";
+import Volunteer from "./components/Volunteer";
 
 function App() {
 	const [theme, setTheme] = useState("light");
@@ -29,21 +30,22 @@ function App() {
 		}
 	};
 
-	const openDonateDialog = () => {
-		document.getElementById('donate').showModal()
+	const openFormDialog = (id) => {
+		document.getElementById(id).showModal()
 	};
 
 	return (
 		<div>
 			<Donate />
+			<Volunteer />
 			<Header theme={theme} toggleTheme={toggleTheme} scrollTo={scrollToTargetElement} />
-			<Hero scrollTo={scrollToTargetElement} donate={openDonateDialog} />
+			<Hero scrollTo={scrollToTargetElement} openForm={openFormDialog}  />
 			<Events />
 			<News />
 			<Projects />
 			<About />
 			<Contact />
-			<Footer scrollTo={scrollToTargetElement} donate={openDonateDialog} />
+			<Footer scrollTo={scrollToTargetElement} openForm={openFormDialog} />
 			<Navigation scrollTo={scrollToTargetElement}/>
 		</div>
 	);

@@ -5,7 +5,6 @@ function ProjectDetails({ id, projectObj }) {
 		<dialog id={id} className="modal">
 			<div className="modal-box">
 				<form method="dialog">
-					{/* if there is a button in form, it will close the modal */}
 					<button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
 						✕
 					</button>
@@ -37,30 +36,30 @@ function ProjectDetails({ id, projectObj }) {
 					)}
 
 					{projectObj?.details?.impact && (
-						<p>
-							Impact:
-							<br />
-							<ul>
+						<ul>
+							<p>
+								Impact:
+								<br />
 								{projectObj.details.impact.map((impact, key) => (
 									<li className="list-disc list-inside" key={key}>
 										{impact}
 									</li>
 								))}
-							</ul>
-						</p>
+							</p>
+						</ul>
 					)}
 
 					{projectObj?.details?.partners && (
-						<p>
-							Partners:{" "}
-							<ul>
+						<ul>
+							<p>
+								Partners:
 								{projectObj.details.partners.map((partner, key) => (
 									<li className="list-disc list-inside" key={key}>
 										{partner}
 									</li>
 								))}
-							</ul>
-						</p>
+							</p>
+						</ul>
 					)}
 					{projectObj?.details?.successStory && (
 						<p>

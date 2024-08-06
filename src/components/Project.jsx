@@ -19,9 +19,9 @@ function Project({ id, projectObj, projectDialog }) {
 						{projectObj?.type.toUpperCase()}
 					</div>
 				</h2>
-				<p>{projectObj?.description}</p>
+				<p className="text-justify">{projectObj?.description}</p>
 				<div className="card-actions justify-end">
-					<button className="btn btn-primary" onClick={() => projectDialog(id)}>Read more</button>
+					<button className="btn btn-primary" onClick={(e) => projectDialog(id)}>Read more</button>
 				</div>
 			</div>
 		</div>

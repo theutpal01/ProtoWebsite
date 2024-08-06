@@ -36,7 +36,7 @@ function About() {
 										src="about/story.png"
 										alt="Story"
 									/>
-									<p className="max-w-2xl mb-5">
+									<p className="max-w-2xl mb-5 text-justify">
 										Global Change Initiative was born out of a simple yet
 										powerful belief: that everyone deserves a fair chance at a
 										better life. In 2005, a group of dedicated volunteers came
@@ -77,7 +77,7 @@ function About() {
 										src="about/mission.png"
 										alt="Story"
 									/>
-									<p className="mb-5">
+									<p className="max-w-2xl mb-5 text-justify">
 										Our mission is to foster sustainable development and empower
 										communities by addressing the root causes of poverty and
 										inequality. We work hand-in-hand with local communities to
@@ -113,7 +113,7 @@ function About() {
 										src="about/vision.png"
 										alt="Story"
 									/>
-									<p className="mb-5">
+									<p className="max-w-2xl mb-5 text-justify">
 										We envision a world where every individual has the
 										opportunity to realize their potential, where communities
 										are resilient, and where poverty is a thing of the past. Our

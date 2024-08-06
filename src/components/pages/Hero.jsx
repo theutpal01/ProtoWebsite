@@ -3,9 +3,9 @@ import Stats from "../Stats";
 
 function Hero({ scrollTo, openForm }) {
 	return (
-		<div className="hero min-h-screen hero-lg" id="hero">
+		<div className="hero min-h-screen hero-lg items-stretch" id="hero">
 			<div className="hero-overlay bg-opacity-70"></div>
-			<div className="hero-content text-neutral-content w-full md:justify-start md:pl-10">
+			<div className="hero-content text-neutral-content w-full md:justify-start md:pl-10 mb-12">
 				<div className="max-w-md">
 					<h1 className="mb-5 text-4xl font-bold animate-pulse">
 						Empower Change.
@@ -23,7 +23,7 @@ function Hero({ scrollTo, openForm }) {
 					</button>
 				</div>
 			</div>
-			<div className="absolute z-2 bottom-0 -translate-y-1/2">
+			<div className="flex self-end mb-24 text-center shadow-lg opacity-70">
 				<Stats />
 			</div>
 		</div>

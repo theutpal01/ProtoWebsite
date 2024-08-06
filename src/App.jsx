@@ -20,7 +20,6 @@ function App() {
 
 	const toggleTheme = () => {
 		setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-		console.log(theme);
 	};
 
 	const scrollToTargetElement = (elementId) => {

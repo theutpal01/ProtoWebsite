@@ -50,7 +50,7 @@ function About() {
 								</div>
 							</div>
 
-							<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<div className="absolute left-5 right-5 top-1/3 sm:top-1/2 flex -translate-y-1/2 transform justify-between">
 								<a
 									onClick={() => scrollToItem("left")}
 									className="btn btn-circle"
@@ -86,7 +86,7 @@ function About() {
 									</p>
 								</div>
 							</div>
-							<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<div className="absolute left-5 right-5 top-1/3 sm:top-1/2 flex -translate-y-1/2 transform justify-between">
 								<a
 									onClick={() => scrollToItem("left")}
 									className="btn btn-circle"
@@ -122,7 +122,7 @@ function About() {
 									</p>
 								</div>
 							</div>
-							<div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<div className="absolute left-5 right-5 top-1/3 sm:top-1/2 flex -translate-y-1/2 transform justify-between">
 								<a
 									onClick={() => scrollToItem("left")}
 									className="btn btn-circle"
